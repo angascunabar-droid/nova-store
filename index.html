@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Store | Accesorios tecnológicos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="barra">
+            <a class="logo" href="#">NOVA<span>STORE</span></a>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+            <a class="boton-nav" href="#productos">Comprar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portada" id="inicio">
+            <div class="portada-texto">
+                <p class="etiqueta">TECNOLOGÍA PARA TU DÍA A DÍA</p>
+                <h1>Pequeños accesorios.<br><span>Grandes ideas.</span></h1>
+                <p>Encuentra accesorios tecnológicos prácticos, modernos y a buen precio.</p>
+                <a class="boton-principal" href="#productos">Ver productos</a>
+            </div>
+            <div class="portada-imagen">
+                <div class="circulo">🎧</div>
+                <p>Descubre algo nuevo</p>
+            </div>
+        </section>
+
+        <section class="productos" id="productos">
+            <div class="titulo-seccion">
+                <p class="etiqueta">NUESTRA SELECCIÓN</p>
+                <h2>Productos destacados</h2>
+                <p>Una selección sencilla para complementar tu tecnología.</p>
+            </div>
+            <div class="rejilla">
+                <article class="tarjeta">
+                    <div class="producto-imagen fondo-lila">🎧</div>
+                    <div class="producto-info">
+                        <p class="categoria">AUDIO</p>
+                        <h3>Audífonos inalámbricos</h3>
+                        <p class="precio">S/ 79.90</p>
+                        <button class="boton-comprar" onclick="agregarProducto('Audífonos inalámbricos')">Agregar</button>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="producto-imagen fondo-azul">⌚</div>
+                    <div class="producto-info">
+                        <p class="categoria">ACCESORIOS</p>
+                        <h3>Reloj inteligente</h3>
+                        <p class="precio">S/ 119.90</p>
+                        <button class="boton-comprar" onclick="agregarProducto('Reloj inteligente')">Agregar</button>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="producto-imagen fondo-rosa">🔊</div>
+                    <div class="producto-info">
+                        <p class="categoria">SONIDO</p>
+                        <h3>Parlante portátil</h3>
+                        <p class="precio">S/ 59.90</p>
+                        <button class="boton-comprar" onclick="agregarProducto('Parlante portátil')">Agregar</button>
+                    </div>
+                </article>
+            </div>
+            <p class="aviso">* Esta es una demostración académica. Los productos y precios son referenciales.</p>
+        </section>
+
+        <section class="nosotros" id="nosotros">
+            <div>
+                <p class="etiqueta">SOBRE NOVA STORE</p>
+                <h2>Tu espacio para descubrir tecnología.</h2>
+            </div>
+            <p>Somos una tienda virtual de ejemplo creada para practicar diseño web. Buscamos mostrar los productos de manera clara y facilitar la navegación de los visitantes.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Nova Store. Proyecto académico de Diseño Web.</p>
+    </footer>
+
+    <button class="boton-flotante" onclick="mostrarInformacion()" aria-label="Información">?</button>
+    <script src="script.js"></script>
+</body>
+</html>
